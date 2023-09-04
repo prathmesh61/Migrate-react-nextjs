@@ -1,27 +1,35 @@
-# React + TypeScript + Vite
+# React + TypeScript + Into - Next + Typescript
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Step 1: Open your directory where you want to create your react app and then open your command line or PowerShell run the following command to create-react-app.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npx create-react-app react-to-next
+cd react-to-next 
+npm start 
 
-## Expanding the ESLint configuration
+Step 2: Uninstall the dependencies. Now we have to uninstall the dependencies which are react-scripts.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+npm uninstall react-scripts 
 
-- Configure the top-level `parserOptions` property like this:
+Step 3: Now install the Next package or dependency. Run the following command to install next.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+npm install next 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Step 4: Change the scripts of the package.json. Copy and paste the following script into your package.json file.
+
+"scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+},
+
+Step 5: Create a App folder in your root directory. After creating your page named folder ex.home 
+and then in this folder ex.home create page.tsx or page.jsx and write FC code.
+
+
+Step 6: to run the application: Run the App by the following command:
+
+npm run dev
+
+Your Migratation Done If You Like Give ME Star⭐⭐⭐
